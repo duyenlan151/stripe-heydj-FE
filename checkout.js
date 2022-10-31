@@ -17,7 +17,7 @@ document
 
 // Fetches a payment intent and captures the client secret
 async function initialize() {
-  const response = await fetch("https://stripe-payment-heydj-test.herokuapp.com//create-payment-intent", {
+  const response = await fetch("https://stripe-payment-heydj-test.herokuapp.com/create-payment-intent", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ items }),
